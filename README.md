@@ -1,6 +1,6 @@
 # Practica_5
 ## Codigo_5.1_Escáner
-```
+```cpp
 #include <Arduino.h>
 #include <Wire.h>
  
@@ -52,7 +52,7 @@ delay(5000); // wait 5 seconds for next scan
 ## Funcionamiento
 
 ## Codigo_5.2_DisplaySSD1306
-```
+```cpp
 #include <Arduino.h>
 #include <SPI.h>
 #include <Wire.h>
