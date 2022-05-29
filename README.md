@@ -50,6 +50,9 @@ delay(5000); // wait 5 seconds for next scan
 }
 ```
 ## Funcionamiento
+En la práctica hemos conocido los aspectos básicos de la comunicación i2C entre otras y este código nos permite ver si se ha establecido correctamente la conexión con un periférico que utiliza un bus i2C con nuestra ESP32.
+En el código en el void loop() es dónde realizamos todos los procesos de comunicación i2c, el setup solo inicializamos la librería Wire para poder usar sus funciones. Primero declaramos variables que nos servirán para mostrar si la conexión es correcta y avisamos con un mensaje por pantalla que se va a empezar a escanear. Ahora hacemos un recorrido por todas las direcciones de la placa. Con ``` Wire.beginTransmission(address)``` inicializamos la transmisión con la dirección "adress" que pasamos como valor de entrada. La función ``` error = Wire.endTransmission();``` nos devuelve el estado de esta transmisión.
+Si nos devuelve 0 entonces sabemos no se ha acabado la transmisión y por lo tanto se ha establecido correctamente. Después mostramos por pantalla la dirección de donde provienen los datos en hexadecimal y finalmente en el caso que nos devuelva un número diferente de 0 sería error.
 
 ## Codigo_5.2_DisplaySSD1306
 ```cpp
