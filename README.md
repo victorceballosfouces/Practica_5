@@ -1,4 +1,5 @@
 # Practica_5
+El objetivo de la practica es comprender el funcionamiento de los buses sistemas de comunicación entre periféricos; estos elementos pueden ser internos o externos al procesador y los buses pueden ser de tipo i2c, spi, i2s, usart. En esta en concreto trabajaremos el i2c.
 ## Codigo_5.1_Escáner
 ```cpp
 #include <Arduino.h>
