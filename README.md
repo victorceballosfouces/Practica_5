@@ -388,3 +388,4 @@ icons[f][DELTAY] = random(1, 6);
 }
 ```
 ## Funcionamiento
+Utilizamos el código proporcionado por la práctica para OLEDs monocromo basados en los drivers SSD1306. Simplemente es un ejemplo para comunicarnos usando I2C con un display. Respecto al código como tal, antes del setup se realiza toda la configuración y definiciones necesarias  para el programa como las diferentes funciones de las formas que se dibujan, las dimensiones de la pantalla del display, etc. Después, en el setup inicializamos el puerto serie y el objeto del display con display.display(). Comprobamos que funcione todo correctamente dibujando un pequeño pixel en pantalla para despues limpiarla. Finalmente en el loop se programan todas las funciones void de dibujo y se van ejecutando a medida que limpiamos la pantalla para poder mostrar la siguiente.
